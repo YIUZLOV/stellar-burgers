@@ -18,7 +18,7 @@ import { useDispatch } from '../../services/store';
 import { useEffect } from 'react';
 import { getIngredients } from '../../slices/ingredientsSlice';
 import { checkUserAuth } from '../../slices/userDataSlice';
-import { ProtectedRoute } from '../../protected-route';
+import { ProtectedRoute } from '../protected-route/protected-route';
 
 const App = () => {
   const navigate = useNavigate();
