@@ -1,8 +1,8 @@
-import { getOrdersApi } from '@api';
+import { getOrdersApi } from '../utils/burger-api';
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { TOrder } from '@utils-types';
 
-type TStateOrdersHistory = {
+export type TStateOrdersHistory = {
   orders: TOrder[];
   loading: boolean;
   error: null | string | undefined;

@@ -11,10 +11,10 @@ import {
   forgotPasswordApi,
   resetPasswordApi,
   TRegisterData
-} from '@api';
+} from '../utils/burger-api';
 import { deleteCookie, getCookie, setCookie } from '../utils/cookie';
 
-type TStateUser = {
+export type TStateUser = {
   isAuthChecked: boolean; //флаг для статуса проверки токена пользователя
   isAuthenticated: boolean;
   user: TUser | null; //null, если пользователь не авторизован
