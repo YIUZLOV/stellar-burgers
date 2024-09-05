@@ -1,8 +1,8 @@
-import { getFeedsApi, getOrderByNumberApi } from '@api';
+import { getFeedsApi, getOrderByNumberApi } from '../utils/burger-api';
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { TOrder } from '@utils-types';
 
-type TStateFeed = {
+export type TStateFeed = {
   orders: TOrder[];
   total: number;
   totalToday: number;
